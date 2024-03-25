@@ -6,5 +6,9 @@
   <div class="col-8">
     <label for="motDePasse" class="form-label">Mot de passe</label>
     <input type="password" class="form-control" id="motDePasse" name="motDePasse">
+
+    <div class="col-12">
+    <button type="submit" class="btn btn-primary" name="submit">Se connecter</button>
+  </div>
   </div>
   </form>

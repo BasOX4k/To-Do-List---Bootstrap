@@ -14,8 +14,7 @@ class Database
     try {
       $dsn = "mysql:host=" . DATABASE_HOST . ";dbname=" . DATABASE_NAME;
       $this->DB = new PDO($dsn, DATABASE_USERNAME, DATABASE_PASSWORD, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-      var_dump("coucou");
-    } catch (PDOException $error) { var_dump("adios");
+    } catch (PDOException $error) {
       die('Erreur : ' . $error->getMessage());
     }
   }

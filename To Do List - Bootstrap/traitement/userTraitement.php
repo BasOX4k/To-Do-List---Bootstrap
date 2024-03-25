@@ -5,7 +5,6 @@ require_once __DIR__ . '/../src/classes/user.php';
 require_once __DIR__ . '/../repository/UserRepository.php';
 require_once __DIR__ . '/../src/classes/Database.php';
  
-var_dump($_POST);
 if (
     !empty($_POST) &&
     isset($_POST['nom']) &&

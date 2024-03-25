@@ -31,19 +31,19 @@ if (
 
             $_SESSION['user'] = $row ['userID'];
             $_SESSION['connecté'] = true;
-            header ('location:../index.php');
+            header ('location: ./../index.php');
             exit;
         } else {
-            header('location:../index.php?error=motDePasse_incorrect');
+            header('location: ./../connexion.php');
             exit;
         }
 
     } else {
-        header('location:../index.php§error=user_not_found');
+        header('location: ./../connexion.php');
         exit;
     }
 
 } else {
-    header('location: ../index.php?error=empty_fields');
+    header('location: ././connexion.php');
     exit;
 }
